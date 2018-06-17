@@ -14,7 +14,7 @@ import ru.bulat.mukhutdinov.chatty.presentation.module.main.contactfeed.contract
 import ru.bulat.mukhutdinov.chatty.presentation.module.main.contactfeed.contract.ContactFeedView
 import javax.inject.Inject
 
-class ContactFeedFeedFragment : BaseFragment<ContactFeedPresenter>(), ContactFeedView {
+class ContactFeedFragment : BaseFragment<ContactFeedPresenter>(), ContactFeedView {
 
     private lateinit var binding: ContactFeedBinding
 

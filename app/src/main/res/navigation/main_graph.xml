@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/main_graph">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/contactFeedFragment">
 
+    <fragment
+        android:id="@+id/contactFragment"
+        android:name="ru.bulat.mukhutdinov.chatty.presentation.module.main.contact.ContactFragment"
+        android:label="ContactFragment"></fragment>
+    <fragment
+        android:id="@+id/contactFeedFragment"
+        android:name="ru.bulat.mukhutdinov.chatty.presentation.module.main.contactfeed.ContactFeedFragment"
+        android:label="ContactFeedFragment">
+        <action
+            android:id="@+id/action_contactFeedFragment_to_contactFragment"
+            app:destination="@id/contactFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left" />
+    </fragment>
 </navigation>

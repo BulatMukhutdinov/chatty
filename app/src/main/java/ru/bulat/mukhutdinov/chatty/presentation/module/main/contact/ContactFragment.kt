@@ -16,18 +16,9 @@ import ru.bulat.mukhutdinov.chatty.presentation.util.EXTRA
 import javax.inject.Inject
 
 class ContactFragment : BaseFragment<ContactPresenter>(), ContactView {
-
-    companion object {
-        fun newInstance(contact: ContactEntity): ContactFragment {
-            val fragment = ContactFragment()
-            val extras = Bundle()
-            extras.putParcelable(EXTRA, contact)
-            fragment.arguments = extras
-            return fragment
-        }
-    }
-
     private lateinit var binding: ContactBinding
+
+    private lateinit var contact: ContactEntity
 
     @Inject
     lateinit var presenter_: ContactPresenter
@@ -35,6 +26,7 @@ class ContactFragment : BaseFragment<ContactPresenter>(), ContactView {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View {
         binding = DataBindingUtil.inflate(inflater, R.layout.contact, container, false)
+        contact = arguments?.getParcelable(EXTRA)!!
 
         return binding.root
     }
