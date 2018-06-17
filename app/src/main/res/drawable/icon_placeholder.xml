@@ -1,0 +1,15 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:bottom="@dimen/margin_half"
+        android:drawable="@drawable/ic_person"
+        android:left="@dimen/margin_half"
+        android:right="@dimen/margin_half"
+        android:top="@dimen/margin_half" />
+    <item>
+        <shape
+            android:padding="10dp"
+            android:shape="oval">
+            <solid android:color="#278b8b8b" />
+        </shape>
+    </item>
+</layer-list>

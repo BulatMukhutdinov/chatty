@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--margins-->
+    <dimen name="margin_half">4dp</dimen>
+    <dimen name="margin1x">8dp</dimen>
+    <dimen name="margin2x">16dp</dimen>
+    <dimen name="margin3x">24dp</dimen>
+    <dimen name="margin4x">32dp</dimen>
+    <dimen name="margin8x">64dp</dimen>
+    <dimen name="margin16x">128dp</dimen>
+
+    <dimen name="elevation1x">4dp</dimen>
+    <dimen name="elevation2x">8dp</dimen>
+    <dimen name="elevation3x">12dp</dimen>
+    <dimen name="elevation4x">16dp</dimen>
+
+
+    <dimen name="icon">48dp</dimen>
+</resources>
